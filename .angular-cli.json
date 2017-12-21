@@ -31,8 +31,8 @@
         "../node_modules/tinymce/plugins/link/plugin.js",
         "../node_modules/tinymce/plugins/paste/plugin.js",
         "../node_modules/tinymce/plugins/table/plugin.js",
-        "../node_modules/tinymce-mention/mention/plugin.js",
-        "../node_modules/tinymce-mention/mention/plugin.min.js"
+        "../src/assets/tinymce-mention/mention/plugin.js",
+        "../src/assets/tinymce-mention/mention/plugin.min.js"
      
       ],
       "environmentSource": "environments/environment.ts",

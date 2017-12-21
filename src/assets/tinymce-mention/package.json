@@ -1,0 +1,59 @@
+{
+  "_from": "tinymce-mention",
+  "_id": "tinymce-mention@4.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-nJX3HihYA0yc6pXOenFXvdkB1ek=",
+  "_location": "/tinymce-mention",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "tinymce-mention",
+    "name": "tinymce-mention",
+    "escapedName": "tinymce-mention",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tinymce-mention/-/tinymce-mention-4.0.2.tgz",
+  "_shasum": "9c95f71e2858034c9cea95ce7a7157bdd901d5e9",
+  "_spec": "tinymce-mention",
+  "_where": "D:\\PROJETOS\\POC_DOOM\\devel",
+  "author": {
+    "name": "Steven Devooght"
+  },
+  "bugs": {
+    "url": "https://github.com/StevenDevooght/tinyMCE-mention/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "jquery": ">=1.8.3"
+  },
+  "deprecated": false,
+  "description": "Mention/Autocomplete plugin for tinyMCE WYSIWYG editor",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-bower": "~0.0.13",
+    "gulp-jshint": "~2.0.0",
+    "gulp-qunit": "~1.3.1",
+    "jshint": "~2.9.1"
+  },
+  "engines": {
+    "node": ">=0.10.26"
+  },
+  "homepage": "https://github.com/StevenDevooght/tinyMCE-mention#readme",
+  "main": "mention/plugin.js",
+  "name": "tinymce-mention",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenDevooght/tinyMCE-mention.git"
+  },
+  "scripts": {
+    "test": "gulp lint test"
+  },
+  "version": "4.0.2"
+}
