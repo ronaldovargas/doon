@@ -1,0 +1,12 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+span{
+    font-size: 18px;
+    border-bottom: 1px solid #b6b6b6;
+  
+}
+  

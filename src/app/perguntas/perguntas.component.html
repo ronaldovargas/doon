@@ -1,0 +1,19 @@
+<span>Adicione uma Pergunta</span>
+<br>
+<mat-dialog-content>
+  <div class="form-container">
+    <mat-form-field>
+      <!-- <input matInput [(ngModel)]="data.name" placeholder="Pergunta" > -->
+      <input matInput tabindex="1" [(ngModel)]="data.name">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Tipo">
+        <mat-option value="option">String</mat-option>
+        <mat-option value="text">Text</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button (click)="onSave()" mat-raised-button>Salvar</button>
+</mat-dialog-actions>

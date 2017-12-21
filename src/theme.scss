@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+
+$doom-primary: mat-palette($mat-blue-grey,50);
+$doom-accent: mat-palette($mat-pink);
+$doom-warn: mat-palette($mat-red);
+
+
+
+$doom-theme : mat-light-theme($doom-primary, $doom-accent, $doom-warn);
+
+@include angular-material-theme($doom-theme);
+
+

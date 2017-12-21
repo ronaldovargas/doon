@@ -1,0 +1,17 @@
+   mce-content-body {
+            display: inline;
+            vertical-align: middle;
+            margin: 0 2px;
+            padding: 0 6px;
+            color: #fff;
+            font-weight: 400;
+            background: #8C1B1B !important;
+            border-radius: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+    }
+
+    .mce-flow-layout {
+        color: #fff;
+        display: none !important;
+    }

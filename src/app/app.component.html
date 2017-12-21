@@ -1,0 +1,70 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <div class="page-logo">
+      <img src="assets/icons/doon-positive.png" alt="DOOM" class="logo-default" style="width: 100px;">
+    </div>
+    <!-- <button mat-icon class="btnMenu" [matMenuTriggerFor]="menu">
+        <mat-icon>reorder</mat-icon>
+    </button> -->
+    <button mat-icon class="btnMenu" (click)="sidenav.open()">
+      <mat-icon>reorder</mat-icon>
+    </button>
+    <span class="spacer"></span>
+    <span class="example-spacer"></span>
+    <mat-icon class="material-icons">keyboard_arrow_down</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+    <!-- <p><button mat-button >Toggle</button></p> -->
+    <mat-icon class="icon-close-menu" (click)="close('toggle button')">chevron_left</mat-icon>
+    <button mat-menu-item>
+      <mat-icon class="icon-menu" (click)="close('toggle button')">home</mat-icon>
+      <span class="text-menu">Home</span>
+    </button>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!--     
+    <p><button mat-button (click)="sidenav.open()">Open</button></p>
+    <p>Closed due to: {{reason}}</p> -->
+    <!-- <mat-card class="options-card">
+
+    </mat-card> -->
+    <mat-card class="options-card">
+      <mat-card-header>
+        <div class="form-container">
+          <span class="perguntas-title">PERGUNTAS</span>
+          <mat-icon class="addIcon"  (click)="openDialog()">add_circle_outline</mat-icon>
+          <br><br>
+          <!-- <span class="lista-perguntas"> {{dialogResult.name}}</span> -->
+          <div *ngFor="let result of pessoaFisica">
+              <span class="lista-perguntas">  {{result.name}}</span>
+          </div>
+        </div>
+
+      </mat-card-header>
+      <mat-card-content>
+
+      </mat-card-content>
+      <mat-card-actions>
+
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="content-card">
+      <mat-card-header>
+
+      </mat-card-header>
+      <mat-card-content>
+        <app-tinymce [id]="id" (onEditorKeyup)="keyupHandlerFunction($event)" [mention]="names" [mentionConfig]="{triggerChar:'@',maxItems:10,labelKey:'name'}"
+          class="editor"></app-tinymce>
+      </mat-card-content>
+      <mat-card-actions>
+
+      </mat-card-actions>
+    </mat-card>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
