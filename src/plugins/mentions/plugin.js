@@ -313,7 +313,7 @@
         },
 
         insert: function (item) {
-            return '<span>' + item[this.options.queryBy] + '</span>&nbsp;';
+            return '<span class="var" contenteditable="false" style="background-color:#8C1B1B;color:#fff;font-weight: 400;border-radius: 4px;">' + item[this.options.queryBy] + '</span>&nbsp;';
         },
 
         cleanUp: function (rollback) {
